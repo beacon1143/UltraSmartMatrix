@@ -10,8 +10,10 @@ int main() {
     }
     inp >> usm;
     inp.close();
+    usm.removeColumns();
     std::ofstream out("data.res");
     out << usm;
+    out.close();
     return 0;
   }
   catch (const std::exception& e) {
